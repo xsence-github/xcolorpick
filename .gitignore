@@ -113,3 +113,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+.pylintrc
+frame0.py
+xcolorpick.code-workspace

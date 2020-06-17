@@ -1,0 +1,11 @@
+#config git
+cd documents/xcolorpick
+git remote add origin https://gitee.com/xsencer/xcolorpick.git
+git clone https://gitee.com/xsencer/xcolorpick.git
+
+#create python code with ui
+cd documents/xcolorpick
+pyuic5 -o frame.py frame.ui
+
+def click_grab(self, Dialog):
+        self.label_2.setPixmap(Qpixmap(os.path.abspath(os.path.dirname(__file__)) + "\shot.jpg"))
