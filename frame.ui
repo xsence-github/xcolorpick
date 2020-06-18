@@ -83,6 +83,9 @@ border-color: rgb(91, 91, 91);</string>
      <height>20</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 85, 255);</string>
+   </property>
    <property name="frameShadow">
     <enum>QFrame::Plain</enum>
    </property>

@@ -7,5 +7,25 @@ git clone https://gitee.com/xsencer/xcolorpick.git
 cd documents/xcolorpick
 pyuic5 -o frame.py frame.ui
 
-def click_grab(self, Dialog):
-        self.label_2.setPixmap(Qpixmap(os.path.abspath(os.path.dirname(__file__)) + "\shot.jpg"))
+#get windows ID list
+import win32gui
+
+hwnd_title = dict()
+def get_all_hwnd(hwnd,mouse):
+    if win32gui.IsWindow(hwnd) and win32gui.IsWindowEnabled(hwnd) and win32gui.IsWindowVisible(hwnd):
+        hwnd_title.update({hwnd:win32gui.GetWindowText(hwnd)})
+
+win32gui.EnumWindows(get_all_hwnd, 0)
+
+for h,t in hwnd_title.items():
+    if t is not "":
+        print(h,t)
+
+#get and save screen shot
+def grab_screen():
+    m = mouse.Mouse()
+    pos = m.get_mouse_pos()
+    print(pos)
+    img = screen.grabWindow(QtWidgets.QApplication.desktop().winId(),pos[0],pos[1],32,32)
+    img.save(os.path.abspath(os.path.dirname(__file__)) + "\shot.jpg")
+    ui.label_2.setPixmap(QtGui.QPixmap(os.path.abspath(os.path.dirname(__file__)) + "\shot.jpg"))
