@@ -9,9 +9,9 @@
 需要安装PyQt5, PyWinMouse, [system-hotkey](https://github.com/timeyyy/system_hotkey)
 
 ```
-pip3 install pyqt5
+pip install pyqt5
 pip install PyWinMouse
-pip3 install system_hotkey
+pip install system_hotkey
 ```
 
 没啥好说的，Alt+s快捷键取色
