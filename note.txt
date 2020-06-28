@@ -29,3 +29,4 @@ def grab_screen():
     img = screen.grabWindow(QtWidgets.QApplication.desktop().winId(),pos[0],pos[1],32,32)
     img.save(os.path.abspath(os.path.dirname(__file__)) + "\shot.jpg")
     ui.label_2.setPixmap(QtGui.QPixmap(os.path.abspath(os.path.dirname(__file__)) + "\shot.jpg"))
+    
