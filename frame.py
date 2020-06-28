@@ -54,7 +54,7 @@ class Ui_Dialog(object):
         self.color_list.setEditTriggers(QtWidgets.QAbstractItemView.NoEditTriggers)
         self.color_list.setProperty("showDropIndicator", False)
         self.color_list.setDragDropOverwriteMode(False)
-        self.color_list.setSelectionMode(QtWidgets.QAbstractItemView.SingleSelection)
+        self.color_list.setSelectionMode(QtWidgets.QAbstractItemView.ExtendedSelection)
         self.color_list.setSelectionBehavior(QtWidgets.QAbstractItemView.SelectRows)
         self.color_list.setRowCount(0)
         self.color_list.setColumnCount(2)

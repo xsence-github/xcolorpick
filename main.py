@@ -92,7 +92,13 @@ class x_Ui_Dialog(frame.Ui_Dialog):
         clipboard = QtGui.QGuiApplication.clipboard()
         if(self.color_list.rowCount() == 0):
             cap_color()
-        clipboard.setText(self.color_list.currentItem().text())
+        list_text = ""
+        for item in self.color_list.selectedItems():
+            list_text = list_text + item.text() + "\n"
+        if(len(list_text) < 9):
+            clipboard.setText(list_text[:-1])
+        else:
+            clipboard.setText(list_text)
         self.color_list.setFocus()
 
 if __name__ == "__main__":
