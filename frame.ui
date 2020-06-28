@@ -25,10 +25,6 @@
   <property name="windowTitle">
    <string>xcolorpick</string>
   </property>
-  <property name="windowIcon">
-   <iconset>
-    <normaloff>xcolorpick.png</normaloff>xcolorpick.png</iconset>
-  </property>
   <widget class="QLabel" name="xcolor">
    <property name="geometry">
     <rect>

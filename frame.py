@@ -16,9 +16,6 @@ class Ui_Dialog(object):
         Dialog.resize(500, 320)
         Dialog.setMinimumSize(QtCore.QSize(500, 320))
         Dialog.setMaximumSize(QtCore.QSize(500, 320))
-        icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("xcolorpick.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        Dialog.setWindowIcon(icon)
         self.xcolor = QtWidgets.QLabel(Dialog)
         self.xcolor.setGeometry(QtCore.QRect(10, 276, 90, 30))
         self.xcolor.setStyleSheet("background-color: rgb(255, 255, 255);\n"

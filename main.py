@@ -107,6 +107,9 @@ if __name__ == "__main__":
     #ui = frame.Ui_Dialog()
     ui=x_Ui_Dialog()
     ui.setupUi(MainWindow)
+    icon = QtGui.QIcon()
+    icon.addPixmap(QtGui.QPixmap(os.path.abspath(os.path.dirname(__file__)) + "/xcolorpick.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+    MainWindow.setWindowIcon(icon)
     MainWindow.show()
 
     #send_sig and slot
