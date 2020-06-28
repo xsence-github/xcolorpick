@@ -8,6 +8,7 @@
 #### 使用说明
 
 没啥好说的，Alt+s快捷键取色
+
 ![xcolorpick](https://images.gitee.com/uploads/images/2020/0628/171022_e944bc04_5733488.png "xcolorpick.png")
 
 #### 参与贡献
