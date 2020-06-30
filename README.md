@@ -6,12 +6,13 @@
 不知道在别的屏幕控件布局是否有问题，如有问题可自行调整。
 
 #### 使用说明
-需要安装PyQt5, PyWinMouse, [system-hotkey](https://github.com/timeyyy/system_hotkey)
+需要安装PyQt5, PyWinMouse, [system-hotkey](https://github.com/timeyyy/system_hotkey), pywin32
 
 ```
 pip install pyqt5
 pip install PyWinMouse
 pip install system_hotkey
+pip install pywin32
 ```
 
 没啥好说的，Alt+s快捷键取色
